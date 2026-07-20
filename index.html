@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
@@ -16,9 +21,13 @@
 
 <body>
 
+    <!-- Navigation -->
     <header>
         <nav class="container">
-            <a href="#top" class="logo">Muhammad Anis</a>
+
+            <a href="#top" class="logo">
+                Muhammad Anis
+            </a>
 
             <ul class="nav-links">
                 <li><a href="#projects">Projects</a></li>
@@ -26,26 +35,38 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
         </nav>
     </header>
 
     <main id="top">
 
-        <!-- Compact introduction: keeps projects visible near the top -->
+        <!-- Compact introduction -->
         <section class="compact-hero">
+
             <div class="container compact-hero-content">
+
                 <div>
-                    <p class="label">ROBOTICS · ROS 2 · AUTONOMOUS SYSTEMS</p>
+                    <p class="label">
+                        ROBOTICS · ROS 2 · AUTONOMOUS SYSTEMS
+                    </p>
+
                     <h1>Muhammad Anis</h1>
+
                     <p class="hero-summary">
-                        Robotics and mechatronics engineer developing autonomous
-                        mobile robot systems for perception, navigation, precise
-                        docking, and industrial transportation.
+                        Robotics and mechatronics engineer developing
+                        autonomous mobile robot systems for perception,
+                        navigation, precise docking, and industrial
+                        transportation.
                     </p>
                 </div>
 
                 <div class="hero-buttons">
-                    <a href="#projects" class="button primary-button">
+
+                    <a
+                        href="#projects"
+                        class="button primary-button"
+                    >
                         Explore projects
                     </a>
 
@@ -57,23 +78,38 @@
                     >
                         View CV
                     </a>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- Projects appear immediately after the compact introduction -->
-        <section id="projects" class="section alternate-background project-showcase">
+        <!-- Projects -->
+        <section
+            id="projects"
+            class="section alternate-background project-showcase"
+        >
+
             <div class="container">
-                <p class="section-label">SELECTED ROBOTICS WORK</p>
-                <h2>Projects</h2>
-                <p class="section-description projects-intro">
-                    A selection of projects involving autonomous mobile robots,
-                    ROS 2, LiDAR perception, Nav2, control, and simulation.
+
+                <p class="section-label">
+                    SELECTED ROBOTICS WORK
                 </p>
 
-                <!-- Featured Project -->
+                <h2>Projects</h2>
+
+                <p class="section-description projects-intro">
+                    A selection of projects involving autonomous mobile
+                    robots, ROS 2, LiDAR perception, Nav2, control, and
+                    simulation.
+                </p>
+
+                <!-- Featured thesis project -->
                 <article class="featured-project">
+
                     <div class="project-media featured-media">
+
                         <video
                             autoplay
                             muted
@@ -81,41 +117,59 @@
                             playsinline
                             preload="metadata"
                             poster="images/docking-poster.jpg"
-                            aria-label="Autonomous trolley docking demonstration"
                         >
-                            <source src="videos/trolley-docking.mp4" type="video/mp4">
+                            <source
+                                src="videos/trolley-docking.mp4"
+                                type="video/mp4"
+                            >
+
                             Your browser does not support HTML video.
                         </video>
+
                     </div>
 
                     <div class="featured-project-content">
-                        <p class="project-category">MASTER'S THESIS · ROS 2 · LIDAR · CONTROL</p>
-                        <h3>Autonomous Trolley Localization and Docking</h3>
 
-                        <p>
-                            Developed an autonomous docking system for a Neobotix
-                            ROX-Diff mobile robot. The system combines UWB-based
-                            coarse localization, LiDAR-based geometric trolley
-                            detection, Nav2 navigation, and local alignment control.
+                        <p class="project-category">
+                            MASTER'S THESIS · ROS 2 · LIDAR · CONTROL
                         </p>
 
-                        <div class="project-results" aria-label="Project results">
+                        <h3>
+                            Autonomous Trolley Localization and Docking
+                        </h3>
+
+                        <p>
+                            Developed an autonomous docking system for a
+                            Neobotix ROX-Diff mobile robot. The system combines
+                            UWB-based coarse localization, LiDAR-based geometric
+                            trolley detection, Nav2 navigation, and local
+                            alignment control.
+                        </p>
+
+                        <div
+                            class="project-results"
+                            aria-label="Project results"
+                        >
+
                             <div>
                                 <strong>22.64 s</strong>
                                 <span>Average docking time</span>
                             </div>
+
                             <div>
                                 <strong>0.26 cm</strong>
                                 <span>Mean lateral error</span>
                             </div>
+
                             <div>
                                 <strong>0.003 rad</strong>
                                 <span>Mean yaw error</span>
                             </div>
+
                         </div>
 
                         <div class="project-links">
-                            <!-- Replace this URL with the actual project repository -->
+
                             <a
                                 href="https://github.com/anisigious"
                                 target="_blank"
@@ -123,31 +177,48 @@
                             >
                                 GitHub repository →
                             </a>
-                            <a href="#contact">Discuss this project →</a>
+
+                            <a href="#contact">
+                                Discuss this project →
+                            </a>
+
                         </div>
+
                     </div>
+
                 </article>
 
+                <!-- Smaller projects -->
                 <div class="project-grid project-grid-media">
 
-                    <!-- Project 2: GIF example -->
+                    <!-- LiDAR project -->
                     <article class="project-card">
+
                         <div class="project-media card-media">
+
                             <img
                                 src="images/lidar-detection.gif"
                                 alt="Animated LiDAR trolley detection visualization"
                                 loading="lazy"
                             >
+
                         </div>
 
                         <div class="project-content">
-                            <p class="project-category">PERCEPTION · LIDAR · PYTHON</p>
-                            <h3>LiDAR-Based Trolley Detection</h3>
+
+                            <p class="project-category">
+                                PERCEPTION · LIDAR · PYTHON
+                            </p>
+
+                            <h3>
+                                LiDAR-Based Trolley Detection
+                            </h3>
 
                             <p>
-                                Built a geometric detection pipeline that clusters
-                                2D LiDAR points and identifies trolley legs using
-                                extent, compactness, parallelism, perpendicularity,
+                                Built a geometric detection pipeline that
+                                clusters two-dimensional LiDAR points and
+                                identifies trolley legs using extent,
+                                compactness, parallelism, perpendicularity,
                                 and dimensional tests.
                             </p>
 
@@ -162,12 +233,16 @@
                             >
                                 View project →
                             </a>
+
                         </div>
+
                     </article>
 
-                    <!-- Project 3: Video example -->
+                    <!-- Simulation project -->
                     <article class="project-card">
+
                         <div class="project-media card-media">
+
                             <video
                                 controls
                                 muted
@@ -175,22 +250,32 @@
                                 playsinline
                                 preload="metadata"
                                 poster="images/simulation-project.jpg"
-                                aria-label="Industrial robot simulation demonstration"
                             >
-                                <source src="videos/industrial-simulation.mp4" type="video/mp4">
+                                <source
+                                    src="videos/industrial-simulation.mp4"
+                                    type="video/mp4"
+                                >
+
                                 Your browser does not support HTML video.
                             </video>
+
                         </div>
 
                         <div class="project-content">
-                            <p class="project-category">ROS 2 · GAZEBO · NAV2</p>
-                            <h3>Industrial Mobile Robot Simulation</h3>
+
+                            <p class="project-category">
+                                ROS 2 · GAZEBO · NAV2
+                            </p>
+
+                            <h3>
+                                Industrial Mobile Robot Simulation
+                            </h3>
 
                             <p>
-                                Created ROS 2 and Gazebo environments for testing
-                                navigation, trolley detection, docking, coupling,
-                                transportation, and attached-footprint planning in
-                                industrial layouts.
+                                Created ROS 2 and Gazebo environments for
+                                testing navigation, trolley detection, docking,
+                                coupling, transportation, and attached-footprint
+                                planning in industrial layouts.
                             </p>
 
                             <p class="project-tech">
@@ -204,74 +289,132 @@
                             >
                                 View repository →
                             </a>
+
                         </div>
+
                     </article>
 
                 </div>
+
             </div>
+
         </section>
 
+        <!-- About -->
         <section id="about" class="section">
+
             <div class="container narrow-content">
-                <p class="section-label">ABOUT</p>
-                <h2>Engineering experience from industry to autonomous robotics</h2>
+
+                <p class="section-label">
+                    ABOUT
+                </p>
+
+                <h2>
+                    Engineering experience from industry to autonomous robotics
+                </h2>
 
                 <p class="section-description">
-                    I am completing my master’s degree in Mechatronics at Aalto
-                    University and working with the Autonomous Mobility Lab. My
-                    work focuses on autonomous mobile robots, target localization,
-                    industrial navigation, and precise robot docking.
+                    I am completing my master’s degree in Mechatronics at
+                    Aalto University and working with the Autonomous Mobility
+                    Lab. My work focuses on autonomous mobile robots, target
+                    localization, industrial navigation, and precise robot
+                    docking.
                 </p>
 
                 <p class="section-description">
-                    I also bring professional experience in industrial maintenance
-                    and planning, allowing me to approach robotics projects from
-                    both a practical engineering and software-development perspective.
+                    I also bring professional experience in industrial
+                    maintenance and planning, allowing me to approach robotics
+                    projects from both a practical engineering and
+                    software-development perspective.
                 </p>
+
             </div>
+
         </section>
 
-        <section id="skills" class="section alternate-background">
+        <!-- Skills -->
+        <section
+            id="skills"
+            class="section alternate-background"
+        >
+
             <div class="container">
-                <p class="section-label">TECHNICAL EXPERTISE</p>
+
+                <p class="section-label">
+                    TECHNICAL EXPERTISE
+                </p>
+
                 <h2>Skills and technologies</h2>
 
                 <div class="skills-grid">
+
                     <div class="skill-group">
                         <h3>Robotics</h3>
-                        <p>ROS 2, Nav2, Gazebo, MoveIt, RViz, SLAM, and AMCL</p>
+
+                        <p>
+                            ROS 2, Nav2, Gazebo, MoveIt, RViz, SLAM, and AMCL
+                        </p>
                     </div>
 
                     <div class="skill-group">
                         <h3>Programming</h3>
-                        <p>Python, C++, MATLAB, Simulink, Git, and Linux</p>
+
+                        <p>
+                            Python, C++, MATLAB, Simulink, Git, and Linux
+                        </p>
                     </div>
 
                     <div class="skill-group">
                         <h3>Perception and Control</h3>
-                        <p>LiDAR, UWB, clustering, sensor fusion, LQR, and path tracking</p>
+
+                        <p>
+                            LiDAR, UWB, clustering, sensor fusion, LQR,
+                            and path tracking
+                        </p>
                     </div>
 
                     <div class="skill-group">
                         <h3>Mechanical Engineering</h3>
-                        <p>SolidWorks, Siemens NX, PTC Creo, ANSYS, and Abaqus</p>
+
+                        <p>
+                            SolidWorks, Siemens NX, PTC Creo, ANSYS,
+                            and Abaqus
+                        </p>
                     </div>
+
                 </div>
+
             </div>
+
         </section>
 
-        <section id="contact" class="section contact-section">
+        <!-- Contact -->
+        <section
+            id="contact"
+            class="section contact-section"
+        >
+
             <div class="container">
-                <p class="section-label">CONTACT</p>
-                <h2>Let’s build autonomous systems</h2>
+
+                <p class="section-label">
+                    CONTACT
+                </p>
+
+                <h2>
+                    Let’s build autonomous systems
+                </h2>
 
                 <p>
-                    I am interested in robotics, autonomous systems, industrial
-                    automation, perception, navigation, and control opportunities.
+                    I am interested in robotics, autonomous systems,
+                    industrial automation, perception, navigation, and
+                    control opportunities.
                 </p>
 
                 <div class="contact-links">
-                    <a href="mailto:muhammadanis831@gmail.com">Email</a>
+
+                    <a href="mailto:muhammadanis831@gmail.com">
+                        Email
+                    </a>
 
                     <a
                         href="https://www.linkedin.com/in/muhammad-anis-158833190/"
@@ -288,17 +431,24 @@
                     >
                         GitHub
                     </a>
+
                 </div>
+
             </div>
+
         </section>
 
     </main>
 
+    <!-- Footer -->
     <footer>
+
         <div class="container">
             <p>© 2026 Muhammad Anis</p>
         </div>
+
     </footer>
 
 </body>
+
 </html>
