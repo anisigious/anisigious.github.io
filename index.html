@@ -1,535 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Curious Robot Project -->
+<article class="project-card">
 
-<head>
-    <meta charset="UTF-8">
+    <div class="project-media card-media">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Portfolio of Muhammad Anis, a robotics and mechatronics engineer working on ROS 2, autonomous mobile robots, LiDAR perception, navigation, and control."
-    >
-
-    <title>Muhammad Anis | Robotics Engineer</title>
-
-    <!-- Version number prevents the browser from loading old CSS -->
-    <link rel="stylesheet" href="style.css?v=10">
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <header>
-        <nav class="container">
-
-            <a href="#top" class="logo">
-                Muhammad Anis
-            </a>
-
-            <ul class="nav-links">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-    <main id="top">
-
-        <!-- Introduction -->
-        <section class="compact-hero">
-
-            <div class="container compact-hero-content">
-
-                <div>
-                    <p class="label">
-                        ROBOTICS · ROS 2 · AUTONOMOUS SYSTEMS
-                    </p>
-
-                    <h1>Muhammad Anis</h1>
-
-                    <p class="hero-summary">
-                        Robotics and mechatronics engineer developing
-                        autonomous mobile robot systems for perception,
-                        navigation, precise docking, and industrial
-                        transportation.
-                    </p>
-                </div>
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="#projects"
-                        class="button primary-button"
-                    >
-                        Explore projects
-                    </a>
-
-                    <a
-                        href="assets/Muhammad_Anis_CV.pdf"
-                        class="button secondary-button"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View CV
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Projects -->
-        <section
-            id="projects"
-            class="section alternate-background"
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="ABB IRB 2600 human-robot interaction demonstration"
         >
-
-            <div class="container">
-
-                <p class="section-label">
-                    SELECTED ROBOTICS WORK
-                </p>
-
-                <h2>Projects</h2>
-
-                <p class="section-description projects-intro">
-                    Projects involving autonomous mobile robots, ROS 2,
-                    LiDAR perception, navigation, control, and simulation.
-                </p>
-
-                <!-- Featured thesis project -->
-                <article class="featured-project">
-
-                    <!-- Three videos stacked vertically -->
-                    <div class="featured-video-stack">
-
-                        <!-- Video 1 -->
-                        <div class="featured-video-frame">
-
-                            <video
-                                autoplay
-                                muted
-                                loop
-                                playsinline
-                                preload="auto"
-                                aria-label="Autonomous trolley docking demonstration"
-                            >
-                                <source
-                                    src="videos/trolley-docking.mp4"
-                                    type="video/mp4"
-                                >
-
-                                Your browser does not support HTML video.
-                            </video>
-
-                        </div>
-
-                        <!-- Video 2 -->
-                        <div class="featured-video-frame">
-
-                            <video
-                                autoplay
-                                muted
-                                loop
-                                playsinline
-                                preload="auto"
-                                aria-label="Autonomous trolley transportation demonstration"
-                            >
-                                <source
-                                    src="videos/trolley-transport.mp4"
-                                    type="video/mp4"
-                                >
-
-                                Your browser does not support HTML video.
-                            </video>
-
-                        </div>
-
-                        <!-- Video 3 -->
-                        <div class="featured-video-frame">
-
-                            <video
-                                autoplay
-                                muted
-                                loop
-                                playsinline
-                                preload="auto"
-                                aria-label="Additional autonomous trolley demonstration"
-                            >
-                                <source
-                                    src="videos/trolley-new.mp4"
-                                    type="video/mp4"
-                                >
-
-                                Your browser does not support HTML video.
-                            </video>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Featured project information -->
-                    <div class="featured-project-content">
-
-                        <p class="project-category">
-                            MASTER'S THESIS · ROS 2 · LIDAR · CONTROL
-                        </p>
-
-                        <h3>
-                            Tracking-Based Autonomous Navigation System
-                            for Factory Intralogistics
-                        </h3>
-
-                        <p>
-                            Developed an autonomous navigation system using
-                            the Neobotix ROX-Diff mobile robot platform. The
-                            system tracks the location of a trolley, navigates
-                            towards it, performs autonomous docking, couples
-                            with the trolley, and transports it to a target
-                            location.
-                        </p>
-
-                        <p>
-                            The system uses a hybrid localization approach.
-                            UWB measurements provide coarse trolley
-                            localization, while LiDAR data and geometric
-                            feature extraction provide an accurate trolley
-                            pose for final alignment and docking.
-                        </p>
-
-                        <p>
-                            The complete system was developed and evaluated
-                            in multiple simulation environments before being
-                            tested on the real robot platform.
-                        </p>
-
-                        <div
-                            class="project-results"
-                            aria-label="Project results"
-                        >
-
-                            <div>
-                                <strong>22.64 s</strong>
-                                <span>Average docking time</span>
-                            </div>
-
-                            <div>
-                                <strong>0.26 cm</strong>
-                                <span>Mean lateral error</span>
-                            </div>
-
-                            <div>
-                                <strong>0.003 rad</strong>
-                                <span>Mean orientation error</span>
-                            </div>
-
-                        </div>
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://github.com/autonomymobilitylab/NeobotixSimulation"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub repository →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-                <!-- Supporting projects -->
-                <div class="project-grid">
-
-                    <!-- ABB Flexley Tug T702 Digital Twin -->
-                    <article class="project-card">
-
-                        <!-- simbot-media prevents the GIF from being cropped -->
-                        <div class="project-media card-media simbot-media">
-
-                            <img
-                                src="videos/simbot.gif"
-                                alt="ABB Flexley Tug T702 digital twin simulation"
-                                loading="lazy"
-                            >
-
-                        </div>
-
-                        <div class="project-content">
-
-                            <p class="project-category">
-                                DIGITAL TWIN · ROS 2 · GAZEBO
-                            </p>
-
-                            <h3>
-                                Developing a Digital Twin of the ABB Flexley
-                                Tug T702 Mobile Platform
-                            </h3>
-
-                            <p>
-                                This project involved creating a
-                                simulation-ready digital twin of the ABB
-                                Flexley Tug T702 mobile platform. The digital
-                                twin replicated the robot’s exact dimensions,
-                                motion behaviour, physics, sensors, and other
-                                important physical properties.
-                            </p>
-
-                            <p>
-                                The robot was tested in different simulation
-                                environments to evaluate its motion, sensor
-                                behaviour, navigation, and interaction with
-                                the surrounding environment.
-                            </p>
-
-                            <p class="project-tech">
-                                ROS 2 · Gazebo Sim · URDF/SDF · Sensors ·
-                                Robot Dynamics
-                            </p>
-
-                            <a
-                                href="https://github.com/autonomymobilitylab/SimBot.git"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View repository →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <!-- Industrial simulation project -->
-                    <article class="project-card">
-
-                        <div class="project-media card-media">
-
-                            <video
-                                autoplay
-                                muted
-                                loop
-                                playsinline
-                                preload="metadata"
-                                aria-label="Industrial robot simulation demonstration"
-                            >
-                                <source
-                                    src="videos/industrial-simulation.mp4"
-                                    type="video/mp4"
-                                >
-
-                                Your browser does not support HTML video.
-                            </video>
-
-                        </div>
-
-                        <div class="project-content">
-
-                            <p class="project-category">
-                                ROS 2 · GAZEBO · NAV2
-                            </p>
-
-                            <h3>
-                                Industrial Mobile Robot Simulation
-                            </h3>
-
-                            <p>
-                                Created ROS 2 and Gazebo simulation
-                                environments for testing autonomous navigation,
-                                trolley detection, docking, coupling,
-                                transportation, and attached-footprint
-                                planning in industrial layouts.
-                            </p>
-
-                            <p class="project-tech">
-                                ROS 2 Jazzy · Gazebo Sim · Nav2 · RViz · AMCL
-                            </p>
-
-                            <a
-                                href="https://github.com/autonomymobilitylab/NeobotixSimulation"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View repository →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- About -->
-        <section id="about" class="section">
-
-            <div class="container narrow-content">
-
-                <p class="section-label">
-                    ABOUT
-                </p>
-
-                <h2>
-                    Engineering experience from industry to autonomous robotics
-                </h2>
-
-                <p class="section-description">
-                    I have completed my master’s degree in Mechatronics at
-                    Aalto University and worked with the Autonomous Mobility
-                    Lab. My work focuses on autonomous mobile robots, target
-                    localization, industrial navigation, perception, and
-                    precise robot docking.
-                </p>
-
-                <p class="section-description">
-                    I also bring professional experience in industrial
-                    maintenance and planning, allowing me to approach robotics
-                    projects from both a practical engineering and software
-                    development perspective.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- Skills -->
-        <section
-            id="skills"
-            class="section alternate-background"
+            <source
+                src="videos/Hureka.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support HTML video.
+        </video>
+
+    </div>
+
+    <div class="project-content">
+
+        <p class="project-category">
+            HUMAN-ROBOT INTERACTION · MACHINE VISION
+        </p>
+
+        <h3>
+            Building a Curious Robot
+        </h3>
+
+        <p>
+            This project involved transforming an ABB IRB 2600
+            industrial robotic arm into a human-interactive robot.
+            The goal was to enable the robot to recognize human
+            gestures and react accordingly.
+        </p>
+
+        <p>
+            The project consisted of two major parts. The first was
+            the machine-vision system used to detect and recognize
+            human gestures. The second involved sending specific
+            instructions to the robot based on the recognized gesture,
+            allowing it to perform predefined movements and responses.
+        </p>
+
+        <p class="project-tech">
+            RobotStudio · RAPID · Python · Machine Vision
+        </p>
+
+        <a
+            href="https://github.com/han-le11/robot-machine-vision.git"
+            target="_blank"
+            rel="noopener noreferrer"
         >
+            View repository →
+        </a>
 
-            <div class="container">
+    </div>
 
-                <p class="section-label">
-                    TECHNICAL EXPERTISE
-                </p>
-
-                <h2>Skills and technologies</h2>
-
-                <div class="skills-grid">
-
-                    <div class="skill-group">
-
-                        <h3>Robotics</h3>
-
-                        <p>
-                            ROS 2, Nav2, Gazebo, MoveIt, RViz, SLAM, and AMCL
-                        </p>
-
-                    </div>
-
-                    <div class="skill-group">
-
-                        <h3>Programming</h3>
-
-                        <p>
-                            Python, C++, MATLAB, Simulink, Git, and Linux
-                        </p>
-
-                    </div>
-
-                    <div class="skill-group">
-
-                        <h3>Perception and Control</h3>
-
-                        <p>
-                            LiDAR, UWB, clustering, sensor fusion, LQR,
-                            and path tracking
-                        </p>
-
-                    </div>
-
-                    <div class="skill-group">
-
-                        <h3>Mechanical Engineering</h3>
-
-                        <p>
-                            SolidWorks, Siemens NX, PTC Creo, ANSYS,
-                            and Abaqus
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Contact -->
-        <section
-            id="contact"
-            class="section contact-section"
-        >
-
-            <div class="container">
-
-                <p class="section-label">
-                    CONTACT
-                </p>
-
-                <h2>
-                    Let’s build autonomous systems
-                </h2>
-
-                <p>
-                    I am interested in opportunities involving robotics,
-                    autonomous systems, industrial automation, perception,
-                    navigation, and control.
-                </p>
-
-                <div class="contact-links">
-
-                    <a href="mailto:muhammadanis831@gmail.com">
-                        Email
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/muhammad-anis-158833190/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
-                    <a
-                        href="https://github.com/anisigious"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-
-        <div class="container">
-            <p>© 2026 Muhammad Anis</p>
-        </div>
-
-    </footer>
-
-</body>
-
-</html>
+</article>
