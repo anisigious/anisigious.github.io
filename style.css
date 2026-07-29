@@ -232,8 +232,6 @@ nav {
     overflow: hidden;
 }
 
-/* Individual video frame */
-
 .featured-video-frame {
     align-items: center;
     background: #0d1422;
@@ -245,13 +243,11 @@ nav {
     position: relative;
 }
 
-/* Divider between featured videos */
-
 .featured-video-frame:not(:last-child) {
     border-bottom: 3px solid white;
 }
 
-/* Display complete featured videos */
+/* Show complete featured videos */
 
 .featured-video-frame video {
     background: #0d1422;
@@ -373,6 +369,8 @@ nav {
     aspect-ratio: 16 / 10;
 }
 
+/* Default media behaviour for supporting projects */
+
 .card-media img,
 .card-media video {
     height: 100%;
@@ -381,12 +379,7 @@ nav {
     width: 100%;
 }
 
-/*
-Show the complete SimBot GIF without cropping.
-
-This overrides object-fit: cover only for the SimBot project.
-The size of the project card remains unchanged.
-*/
+/* Show the complete SimBot GIF */
 
 .simbot-media img {
     background: #0d1422;
@@ -395,6 +388,23 @@ The size of the project card remains unchanged.
     object-position: center;
     width: 100%;
 }
+
+/*
+Show the complete Curious Robot video.
+
+This overrides the default object-fit: cover rule only
+for the Hureka.mp4 video.
+*/
+
+.curious-robot-media video {
+    background: #0d1422;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+
+/* Supporting project content */
 
 .project-content {
     padding: 26px;
@@ -560,8 +570,8 @@ footer {
     }
 
     /*
-    Justified text can create large spaces on narrow screens,
-    so mobile paragraphs use normal left alignment.
+    Justified text may create large spaces on narrow screens,
+    so paragraphs return to left alignment on mobile.
     */
 
     .featured-project-content > p:not(.project-category),

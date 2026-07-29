@@ -16,8 +16,8 @@
 
     <title>Muhammad Anis | Robotics Engineer</title>
 
-    <!-- Version number prevents the browser from loading old CSS -->
-    <link rel="stylesheet" href="style.css?v=11">
+    <!-- Change the version number after CSS updates to prevent caching -->
+    <link rel="stylesheet" href="style.css?v=12">
 </head>
 
 <body>
@@ -315,7 +315,10 @@
                     <!-- Curious Robot Project -->
                     <article class="project-card">
 
-                        <div class="project-media card-media">
+                        <!-- This class prevents the video from being cropped -->
+                        <div
+                            class="project-media card-media curious-robot-media"
+                        >
 
                             <video
                                 autoplay
