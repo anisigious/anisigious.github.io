@@ -16,7 +16,8 @@
 
     <title>Muhammad Anis | Robotics Engineer</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- The version number helps prevent old CSS caching -->
+    <link rel="stylesheet" href="style.css?v=6">
 </head>
 
 <body>
@@ -88,7 +89,7 @@
         <!-- Projects -->
         <section
             id="projects"
-            class="section alternate-background project-showcase"
+            class="section alternate-background"
         >
 
             <div class="container">
@@ -100,52 +101,59 @@
                 <h2>Projects</h2>
 
                 <p class="section-description projects-intro">
-                    A selection of projects involving autonomous mobile
-                    robots, ROS 2, LiDAR perception, Nav2, control, and
-                    simulation.
+                    Projects involving autonomous mobile robots, ROS 2,
+                    LiDAR perception, navigation, control, and simulation.
                 </p>
 
                 <!-- Featured thesis project -->
                 <article class="featured-project">
 
-                    <!-- Videos stacked vertically -->
+                    <!-- Two videos stacked vertically -->
                     <div class="featured-video-stack">
 
-                        <video
-                            autoplay
-                            muted
-                            loop
-                            playsinline
-                            preload="auto"
-                            aria-label="Autonomous trolley docking demonstration"
-                        >
-                            <source
-                                src="videos/trolley-docking.mp4"
-                                type="video/mp4"
+                        <div class="featured-video-frame">
+
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="auto"
+                                aria-label="Autonomous trolley docking demonstration"
                             >
+                                <source
+                                    src="videos/trolley-docking.mp4"
+                                    type="video/mp4"
+                                >
 
-                            Your browser does not support HTML video.
-                        </video>
+                                Your browser does not support HTML video.
+                            </video>
 
-                        <video
-                            autoplay
-                            muted
-                            loop
-                            playsinline
-                            preload="auto"
-                            aria-label="Autonomous trolley transportation demonstration"
-                        >
-                            <source
-                                src="videos/trolley-transport.mp4"
-                                type="video/mp4"
+                        </div>
+
+                        <div class="featured-video-frame">
+
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="auto"
+                                aria-label="Autonomous trolley transportation demonstration"
                             >
+                                <source
+                                    src="videos/trolley-transport.mp4"
+                                    type="video/mp4"
+                                >
 
-                            Your browser does not support HTML video.
-                        </video>
+                                Your browser does not support HTML video.
+                            </video>
+
+                        </div>
 
                     </div>
 
-                    <!-- Project description -->
+                    <!-- Project information -->
                     <div class="featured-project-content">
 
                         <p class="project-category">
@@ -384,45 +392,37 @@
                 <div class="skills-grid">
 
                     <div class="skill-group">
-
                         <h3>Robotics</h3>
 
                         <p>
                             ROS 2, Nav2, Gazebo, MoveIt, RViz, SLAM, and AMCL
                         </p>
-
                     </div>
 
                     <div class="skill-group">
-
                         <h3>Programming</h3>
 
                         <p>
                             Python, C++, MATLAB, Simulink, Git, and Linux
                         </p>
-
                     </div>
 
                     <div class="skill-group">
-
                         <h3>Perception and Control</h3>
 
                         <p>
                             LiDAR, UWB, clustering, sensor fusion, LQR,
                             and path tracking
                         </p>
-
                     </div>
 
                     <div class="skill-group">
-
                         <h3>Mechanical Engineering</h3>
 
                         <p>
                             SolidWorks, Siemens NX, PTC Creo, ANSYS,
                             and Abaqus
                         </p>
-
                     </div>
 
                 </div>
@@ -483,13 +483,10 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
-
         <div class="container">
             <p>© 2026 Muhammad Anis</p>
         </div>
-
     </footer>
 
 </body>
