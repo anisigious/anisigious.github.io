@@ -219,47 +219,41 @@ nav {
     overflow: hidden;
 }
 
-/*
-The left column automatically matches the height
-of the text column on the right.
-*/
+/* Three vertically stacked videos */
 
 .featured-video-stack {
-    background: #000;
+    background: #0d1422;
     display: grid;
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
     min-height: 0;
     min-width: 0;
     overflow: hidden;
 }
 
-/*
-Each frame takes half of the left column.
-The position-relative frame prevents the video
-from changing the overall card size.
-*/
+/* Individual video frame */
 
 .featured-video-frame {
-    background: #000;
+    align-items: center;
+    background: #0d1422;
+    display: flex;
+    justify-content: center;
     min-height: 0;
     min-width: 0;
     overflow: hidden;
     position: relative;
 }
 
-.featured-video-frame:first-child {
+/* Divider between videos */
+
+.featured-video-frame:not(:last-child) {
     border-bottom: 3px solid white;
 }
 
-/*
-The video stays inside its frame.
-
-object-fit: contain shows the complete video.
-It does not crop or zoom the video.
-*/
+/* Show complete videos without zooming or cropping */
 
 .featured-video-frame video {
-    background: #000;
+    background: #0d1422;
+    display: block;
     height: 100%;
     inset: 0;
     object-fit: contain;
@@ -268,7 +262,7 @@ It does not crop or zoom the video.
     width: 100%;
 }
 
-/* Featured project text */
+/* Featured project content */
 
 .featured-project-content {
     display: flex;
@@ -464,7 +458,7 @@ footer {
     text-align: center;
 }
 
-/* Tablet */
+/* Tablet layout */
 
 @media (max-width: 900px) {
     .compact-hero-content {
@@ -478,12 +472,12 @@ footer {
     }
 
     /*
-    Once the layout becomes one column, each video
-    gets its own normal widescreen frame.
+    On tablets and phones, the three videos appear
+    above the text using their normal aspect ratio.
     */
 
     .featured-video-stack {
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
     }
 
     .featured-video-frame {
@@ -505,7 +499,7 @@ footer {
     }
 }
 
-/* Mobile */
+/* Mobile layout */
 
 @media (max-width: 600px) {
     .container {
@@ -550,7 +544,7 @@ footer {
     }
 }
 
-/* Reduced motion */
+/* Reduced-motion preferences */
 
 @media (prefers-reduced-motion: reduce) {
     html {

@@ -16,8 +16,8 @@
 
     <title>Muhammad Anis | Robotics Engineer</title>
 
-    <!-- The version number helps prevent old CSS caching -->
-    <link rel="stylesheet" href="style.css?v=6">
+    <!-- Version number helps prevent old CSS from being cached -->
+    <link rel="stylesheet" href="style.css?v=7">
 </head>
 
 <body>
@@ -108,9 +108,10 @@
                 <!-- Featured thesis project -->
                 <article class="featured-project">
 
-                    <!-- Two videos stacked vertically -->
+                    <!-- Three videos stacked vertically -->
                     <div class="featured-video-stack">
 
+                        <!-- Video 1 -->
                         <div class="featured-video-frame">
 
                             <video
@@ -131,6 +132,7 @@
 
                         </div>
 
+                        <!-- Video 2 -->
                         <div class="featured-video-frame">
 
                             <video
@@ -143,6 +145,27 @@
                             >
                                 <source
                                     src="videos/trolley-transport.mp4"
+                                    type="video/mp4"
+                                >
+
+                                Your browser does not support HTML video.
+                            </video>
+
+                        </div>
+
+                        <!-- Video 3 -->
+                        <div class="featured-video-frame">
+
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="auto"
+                                aria-label="Additional autonomous trolley demonstration"
+                            >
+                                <source
+                                    src="videos/trolley-new.mp4"
                                     type="video/mp4"
                                 >
 
@@ -392,37 +415,45 @@
                 <div class="skills-grid">
 
                     <div class="skill-group">
+
                         <h3>Robotics</h3>
 
                         <p>
                             ROS 2, Nav2, Gazebo, MoveIt, RViz, SLAM, and AMCL
                         </p>
+
                     </div>
 
                     <div class="skill-group">
+
                         <h3>Programming</h3>
 
                         <p>
                             Python, C++, MATLAB, Simulink, Git, and Linux
                         </p>
+
                     </div>
 
                     <div class="skill-group">
+
                         <h3>Perception and Control</h3>
 
                         <p>
                             LiDAR, UWB, clustering, sensor fusion, LQR,
                             and path tracking
                         </p>
+
                     </div>
 
                     <div class="skill-group">
+
                         <h3>Mechanical Engineering</h3>
 
                         <p>
                             SolidWorks, Siemens NX, PTC Creo, ANSYS,
                             and Abaqus
                         </p>
+
                     </div>
 
                 </div>
@@ -483,10 +514,13 @@
 
     </main>
 
+    <!-- Footer -->
     <footer>
+
         <div class="container">
             <p>© 2026 Muhammad Anis</p>
         </div>
+
     </footer>
 
 </body>
