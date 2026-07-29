@@ -41,7 +41,7 @@
 
     <main id="top">
 
-        <!-- Compact introduction -->
+        <!-- Introduction -->
         <section class="compact-hero">
 
             <div class="container compact-hero-content">
@@ -108,26 +108,61 @@
                 <!-- Featured thesis project -->
                 <article class="featured-project">
 
-                    <div class="project-media featured-media">
+                    <!-- Two project videos -->
+                    <div class="project-video-grid">
 
-                        <video
-                            autoplay
-                            muted
-                            loop
-                            playsinline
-                            preload="metadata"
-                            poster="images/docking-poster.jpg"
-                        >
-                            <source
-                                src="videos/trolley-docking.mp4"
-                                type="video/mp4"
+                        <!-- First video -->
+                        <div class="project-video-item">
+
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                controls
+                                preload="metadata"
                             >
+                                <source
+                                    src="videos/trolley-docking.mp4"
+                                    type="video/mp4"
+                                >
 
-                            Your browser does not support HTML video.
-                        </video>
+                                Your browser does not support HTML video.
+                            </video>
+
+                            <p class="video-caption">
+                                Autonomous trolley detection and docking
+                            </p>
+
+                        </div>
+
+                        <!-- Second video -->
+                        <div class="project-video-item">
+
+                            <video
+                                muted
+                                loop
+                                playsinline
+                                controls
+                                preload="metadata"
+                            >
+                                <source
+                                    src="videos/trolley-transport.mp4"
+                                    type="video/mp4"
+                                >
+
+                                Your browser does not support HTML video.
+                            </video>
+
+                            <p class="video-caption">
+                                Autonomous navigation and trolley transportation
+                            </p>
+
+                        </div>
 
                     </div>
 
+                    <!-- Featured project description -->
                     <div class="featured-project-content">
 
                         <p class="project-category">
@@ -135,14 +170,30 @@
                         </p>
 
                         <h3>
-                            Developing a Tracking Based Autonomous Navigation System for Intralogistics in Factories 
+                            Tracking-Based Autonomous Navigation System
+                            for Intralogistics in Factories
                         </h3>
 
                         <p>
-                            Developed an autonomous navigation system using Neobotix Rox Diff robot platform capable of tracking the location of the trolley in 
-                            the environment, autonomous docking and navigation along with trolley. The developed system utilizes a hybrid approach, output from 
-                            UWB is used for coarse localization of the trolley and then LiDAR point cloud data is used to get the accurate location of trolley using geometric feature 
-                            extraction. The system was developed in simulation and tested in different simulation environments and then further tested in real world. 
+                            Developed an autonomous navigation system using
+                            the Neobotix ROX-Diff robot platform. The system
+                            tracks the location of a trolley, performs
+                            autonomous docking, couples with the trolley,
+                            and transports it to a target location.
+                        </p>
+
+                        <p>
+                            The system uses a hybrid localization approach.
+                            UWB measurements provide coarse trolley
+                            localization, while LiDAR point-cloud data and
+                            geometric feature extraction provide an accurate
+                            trolley pose for docking.
+                        </p>
+
+                        <p>
+                            The system was developed and evaluated in multiple
+                            simulation environments before being tested on
+                            the real robot platform.
                         </p>
 
                         <div
@@ -162,7 +213,7 @@
 
                             <div>
                                 <strong>0.003 rad</strong>
-                                <span>Mean yaw error</span>
+                                <span>Mean orientation error</span>
                             </div>
 
                         </div>
@@ -170,7 +221,7 @@
                         <div class="project-links">
 
                             <a
-                                href="https://github.com/autonomymobilitylab/NeobotixSimulation.git"
+                                href="https://github.com/autonomymobilitylab/NeobotixSimulation"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -187,7 +238,7 @@
 
                 </article>
 
-                <!-- Smaller projects -->
+                <!-- Supporting projects -->
                 <div class="project-grid project-grid-media">
 
                     <!-- LiDAR project -->
@@ -214,11 +265,11 @@
                             </h3>
 
                             <p>
-                                Built a geometric detection pipeline that
+                                Developed a geometric detection pipeline that
                                 clusters two-dimensional LiDAR points and
-                                identifies trolley legs using extent,
+                                identifies trolley legs using dimensional,
                                 compactness, parallelism, perpendicularity,
-                                and dimensional tests.
+                                and geometric consistency tests.
                             </p>
 
                             <p class="project-tech">
@@ -226,7 +277,7 @@
                             </p>
 
                             <a
-                                href="https://github.com/anisigious"
+                                href="https://github.com/autonomymobilitylab/NeobotixSimulation"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -248,7 +299,6 @@
                                 loop
                                 playsinline
                                 preload="metadata"
-                                poster="images/simulation-project.jpg"
                             >
                                 <source
                                     src="videos/industrial-simulation.mp4"
@@ -271,9 +321,10 @@
                             </h3>
 
                             <p>
-                                Created ROS 2 and Gazebo environments for
-                                testing navigation, trolley detection, docking,
-                                coupling, transportation, and attached-footprint
+                                Created ROS 2 and Gazebo simulation
+                                environments for testing autonomous navigation,
+                                trolley detection, docking, coupling,
+                                transportation, and attached-footprint
                                 planning in industrial layouts.
                             </p>
 
@@ -313,18 +364,18 @@
                 </h2>
 
                 <p class="section-description">
-                    I am completing my master’s degree in Mechatronics at
-                    Aalto University and working with the Autonomous Mobility
+                    I have completed my master’s degree in Mechatronics at
+                    Aalto University and worked with the Autonomous Mobility
                     Lab. My work focuses on autonomous mobile robots, target
-                    localization, industrial navigation, and precise robot
-                    docking.
+                    localization, industrial navigation, perception, and
+                    precise robot docking.
                 </p>
 
                 <p class="section-description">
                     I also bring professional experience in industrial
                     maintenance and planning, allowing me to approach robotics
-                    projects from both a practical engineering and
-                    software-development perspective.
+                    projects from both a practical engineering and software
+                    development perspective.
                 </p>
 
             </div>
@@ -348,37 +399,45 @@
                 <div class="skills-grid">
 
                     <div class="skill-group">
+
                         <h3>Robotics</h3>
 
                         <p>
                             ROS 2, Nav2, Gazebo, MoveIt, RViz, SLAM, and AMCL
                         </p>
+
                     </div>
 
                     <div class="skill-group">
+
                         <h3>Programming</h3>
 
                         <p>
                             Python, C++, MATLAB, Simulink, Git, and Linux
                         </p>
+
                     </div>
 
                     <div class="skill-group">
+
                         <h3>Perception and Control</h3>
 
                         <p>
                             LiDAR, UWB, clustering, sensor fusion, LQR,
                             and path tracking
                         </p>
+
                     </div>
 
                     <div class="skill-group">
+
                         <h3>Mechanical Engineering</h3>
 
                         <p>
                             SolidWorks, Siemens NX, PTC Creo, ANSYS,
                             and Abaqus
                         </p>
+
                     </div>
 
                 </div>
@@ -404,9 +463,9 @@
                 </h2>
 
                 <p>
-                    I am interested in robotics, autonomous systems,
-                    industrial automation, perception, navigation, and
-                    control opportunities.
+                    I am interested in opportunities involving robotics,
+                    autonomous systems, industrial automation, perception,
+                    navigation, and control.
                 </p>
 
                 <div class="contact-links">
