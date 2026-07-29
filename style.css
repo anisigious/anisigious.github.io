@@ -245,13 +245,13 @@ nav {
     position: relative;
 }
 
-/* Divider between videos */
+/* Divider between featured videos */
 
 .featured-video-frame:not(:last-child) {
     border-bottom: 3px solid white;
 }
 
-/* Show complete videos without zooming or cropping */
+/* Display complete featured videos */
 
 .featured-video-frame video {
     background: #0d1422;
@@ -377,6 +377,21 @@ nav {
 .card-media video {
     height: 100%;
     object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+/*
+Show the complete SimBot GIF without cropping.
+
+This overrides object-fit: cover only for the SimBot project.
+The size of the project card remains unchanged.
+*/
+
+.simbot-media img {
+    background: #0d1422;
+    height: 100%;
+    object-fit: contain;
     object-position: center;
     width: 100%;
 }
@@ -545,8 +560,8 @@ footer {
     }
 
     /*
-    Fully justified text can create large spaces on narrow screens,
-    so mobile paragraphs return to normal left alignment.
+    Justified text can create large spaces on narrow screens,
+    so mobile paragraphs use normal left alignment.
     */
 
     .featured-project-content > p:not(.project-category),
