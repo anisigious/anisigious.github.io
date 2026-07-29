@@ -220,11 +220,10 @@ nav {
 }
 
 /*
-Two videos on the left.
+The two featured videos are stacked vertically.
 
-The grid divides the available left-side height equally between
-the two videos, allowing them to fill the complete height beside
-the project description.
+The complete left column stretches to match the height
+of the project text on the right.
 */
 
 .featured-video-stack {
@@ -237,11 +236,20 @@ the project description.
     overflow: hidden;
 }
 
+/*
+"contain" shows the complete video.
+
+It prevents zooming and cropping. Small black spaces may
+appear around the video when the frame and video have
+different aspect ratios.
+*/
+
 .featured-video-stack video {
+    background: #0d1422;
     display: block;
     height: 100%;
     min-height: 0;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     width: 100%;
 }
@@ -249,6 +257,8 @@ the project description.
 .featured-video-stack video:first-child {
     border-bottom: 3px solid white;
 }
+
+/* Featured project text */
 
 .featured-project-content {
     display: flex;
@@ -268,6 +278,8 @@ the project description.
     color: var(--secondary-text);
     margin-bottom: 16px;
 }
+
+/* Project results */
 
 .project-results {
     display: grid;
@@ -298,6 +310,8 @@ the project description.
     font-size: 0.78rem;
     line-height: 1.35;
 }
+
+/* Project links */
 
 .project-links {
     display: flex;
@@ -350,6 +364,11 @@ the project description.
 .card-media {
     aspect-ratio: 16 / 10;
 }
+
+/*
+Supporting project media can fill its card.
+This rule does not affect the two featured videos.
+*/
 
 .card-media img,
 .card-media video {
@@ -449,14 +468,14 @@ footer {
         gap: 28px;
     }
 
+    /*
+    On tablets, the project becomes one column.
+    Both complete videos appear above the text.
+    */
+
     .featured-project {
         grid-template-columns: 1fr;
     }
-
-    /*
-    On tablets and phones, the videos appear above the text,
-    stacked vertically using their original aspect ratio.
-    */
 
     .featured-video-stack {
         display: grid;
@@ -466,8 +485,9 @@ footer {
 
     .featured-video-stack video {
         aspect-ratio: 2486 / 1424;
+        background: #0d1422;
         height: auto;
-        object-fit: cover;
+        object-fit: contain;
         width: 100%;
     }
 
@@ -522,6 +542,12 @@ footer {
     .featured-project-content,
     .project-content {
         padding: 24px;
+    }
+
+    .featured-video-stack video {
+        aspect-ratio: 2486 / 1424;
+        height: auto;
+        object-fit: contain;
     }
 }
 
