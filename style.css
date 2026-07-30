@@ -89,7 +89,7 @@ nav {
     color: var(--primary);
 }
 
-/* Compact introduction */
+/* Introduction */
 
 .compact-hero {
     padding: 72px 0 56px;
@@ -193,6 +193,8 @@ nav {
     font-size: 1.08rem;
     margin-bottom: 18px;
     max-width: 820px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .projects-intro {
@@ -206,31 +208,57 @@ nav {
 /* Featured project */
 
 .featured-project {
+    align-items: stretch;
     background: white;
     border: 1px solid var(--border);
     border-radius: 16px;
     box-shadow: var(--shadow);
     display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(330px, 0.85fr);
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(350px, 0.8fr);
     margin-bottom: 30px;
     overflow: hidden;
 }
 
-.project-media {
+/* Three vertically stacked videos */
+
+.featured-video-stack {
     background: #0d1422;
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    min-height: 0;
+    min-width: 0;
     overflow: hidden;
 }
 
-.project-media img,
-.project-media video {
+.featured-video-frame {
+    align-items: center;
+    background: #0d1422;
+    display: flex;
+    justify-content: center;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured-video-frame:not(:last-child) {
+    border-bottom: 3px solid white;
+}
+
+.featured-video-frame video {
+    background: #0d1422;
+    display: block;
     height: 100%;
-    object-fit: cover;
+    inset: 0;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
     width: 100%;
 }
 
-.featured-media {
-    min-height: 500px;
-}
+/* Featured project content */
 
 .featured-project-content {
     display: flex;
@@ -248,12 +276,17 @@ nav {
 
 .featured-project-content > p:not(.project-category) {
     color: var(--secondary-text);
+    margin-bottom: 16px;
+    text-align: justify;
+    text-justify: inter-word;
 }
+
+/* Project results */
 
 .project-results {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin: 26px 0;
 }
 
@@ -279,6 +312,8 @@ nav {
     font-size: 0.78rem;
     line-height: 1.35;
 }
+
+/* Project links */
 
 .project-links {
     display: flex;
@@ -323,9 +358,93 @@ nav {
     transform: translateY(-4px);
 }
 
+.project-media {
+    background: #0d1422;
+    overflow: hidden;
+}
+
 .card-media {
     aspect-ratio: 16 / 10;
 }
+
+/* Default media behaviour */
+
+.card-media img,
+.card-media video {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+/* Show complete SimBot GIF */
+
+.simbot-media img {
+    background: #0d1422;
+    object-fit: contain;
+}
+
+/* Show complete Curious Robot video */
+
+.curious-robot-media video {
+    background: #0d1422;
+    object-fit: contain;
+}
+
+/* Fourth project spans the full project-grid width */
+
+.pathfinding-project {
+    grid-column: 1 / -1;
+}
+
+/* Fourth project image gallery */
+
+.pathfinding-gallery {
+    background: #0d1422;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 16px;
+}
+
+/* Individual path-finding image container */
+
+.pathfinding-image {
+    background: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-width: 0;
+    overflow: hidden;
+}
+
+/*
+The images have a limited height and use contain,
+so the complete result remains visible without zooming.
+*/
+
+.pathfinding-image img {
+    background: #ffffff;
+    height: 210px;
+    object-fit: contain;
+    object-position: center;
+    padding: 14px;
+    width: 100%;
+}
+
+/* Algorithm labels */
+
+.pathfinding-image figcaption {
+    background: #0d1422;
+    color: white;
+    font-size: 0.86rem;
+    font-weight: 700;
+    padding: 9px 12px;
+    text-align: center;
+}
+
+/* Supporting project content */
 
 .project-content {
     padding: 26px;
@@ -340,6 +459,8 @@ nav {
 .project-content > p:not(.project-category) {
     color: var(--secondary-text);
     margin-bottom: 16px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .project-tech {
@@ -355,7 +476,7 @@ nav {
 .skills-grid {
     display: grid;
     gap: 24px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .skill-group {
@@ -421,13 +542,37 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .featured-media {
-        aspect-ratio: 16 / 10;
-        min-height: auto;
+    .featured-video-stack {
+        grid-template-rows: auto auto auto;
+    }
+
+    .featured-video-frame {
+        aspect-ratio: 2486 / 1424;
+    }
+
+    .featured-video-frame video {
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
     }
 
     .project-grid {
         grid-template-columns: 1fr;
+    }
+
+    .pathfinding-project {
+        grid-column: auto;
+    }
+
+    .pathfinding-gallery {
+        gap: 10px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 12px;
+    }
+
+    .pathfinding-image img {
+        height: 170px;
+        padding: 10px;
     }
 
     .skills-grid {
@@ -474,13 +619,66 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    /*
+    Keep the three algorithm images parallel on mobile,
+    but reduce their height and spacing.
+    */
+
+    .pathfinding-gallery {
+        gap: 6px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 8px;
+    }
+
+    .pathfinding-image {
+        border-radius: 5px;
+    }
+
+    .pathfinding-image img {
+        height: 110px;
+        padding: 5px;
+    }
+
+    .pathfinding-image figcaption {
+        font-size: 0.65rem;
+        line-height: 1.2;
+        padding: 7px 3px;
+    }
+
     .featured-project-content,
     .project-content {
         padding: 24px;
     }
+
+    /* Avoid large gaps between words on narrow screens */
+
+    .featured-project-content > p:not(.project-category),
+    .project-content > p:not(.project-category),
+    .section-description {
+        text-align: left;
+    }
 }
 
-/* Respect reduced-motion preferences */
+/* Very small mobile screens */
+
+@media (max-width: 420px) {
+    .pathfinding-gallery {
+        gap: 4px;
+        padding: 6px;
+    }
+
+    .pathfinding-image img {
+        height: 90px;
+        padding: 3px;
+    }
+
+    .pathfinding-image figcaption {
+        font-size: 0.58rem;
+        padding: 6px 2px;
+    }
+}
+
+/* Reduced-motion preferences */
 
 @media (prefers-reduced-motion: reduce) {
     html {
