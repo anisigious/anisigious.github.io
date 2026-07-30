@@ -11,12 +11,12 @@
 
     <meta
         name="description"
-        content="Portfolio of Muhammad Anis, a robotics and mechatronics engineer working on ROS 2, autonomous mobile robots, machine vision, path planning, navigation, and control."
+        content="Portfolio of Muhammad Anis, a robotics engineer specializing in mobile robotics, autonomous navigation, and control."
     >
 
     <title>Muhammad Anis | Robotics Engineer</title>
 
-    <link rel="stylesheet" href="style.css?v=17">
+    <link rel="stylesheet" href="style.css?v=18">
 </head>
 
 <body>
@@ -26,12 +26,12 @@
         <nav class="container">
 
             <a href="#top" class="logo">
-                Muhammad Anis
+                MA
             </a>
 
             <ul class="nav-links">
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -41,47 +41,88 @@
 
     <main id="top">
 
-        <!-- Introduction -->
+        <!-- Hero -->
         <section class="compact-hero">
 
             <div class="container compact-hero-content">
 
-                <div>
+                <div class="hero-text-block">
 
-                    <p class="label">
-                        ROBOTICS · ROS 2 · AUTONOMOUS SYSTEMS
-                    </p>
+                    <div class="hero-identity">
+                        <img
+                            src="images/anis.jpg"
+                            alt="Portrait of Muhammad Anis"
+                            class="hero-profile-image"
+                        >
 
-                    <h1>Muhammad Anis</h1>
+                        <div>
+                            <h1>Muhammad Anis</h1>
+                        </div>
+                    </div>
 
                     <p class="hero-summary">
-                        Robotics and mechatronics engineer developing
-                        autonomous mobile robot systems for perception,
-                        navigation, precise docking, and industrial
-                        transportation.
+                        Robotics engineer with a master’s in Mechatronics
+                        Engineering, specializing in mobile robotics and
+                        autonomous navigation, with experience in developing
+                        and validating autonomous systems for industrial and
+                        research environments. Focused on reliable navigation,
+                        robot behavior, and real-world implementation of
+                        mobile robot solutions.
                     </p>
 
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#projects"
+                            class="button primary-button"
+                        >
+                            Explore projects
+                        </a>
+
+                        <a
+                            href="assets/Muhammad_Anis_CV.pdf"
+                            class="button secondary-button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View CV
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <div class="hero-buttons">
+            </div>
 
-                    <a
-                        href="#projects"
-                        class="button primary-button"
-                    >
-                        Explore projects
-                    </a>
+        </section>
 
-                    <a
-                        href="assets/Muhammad_Anis_CV.pdf"
-                        class="button secondary-button"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View CV
-                    </a>
+        <!-- About -->
+        <section id="about" class="section">
 
-                </div>
+            <div class="container narrow-content">
+
+                <p class="section-label">
+                    ABOUT
+                </p>
+
+                <p class="section-description">
+                    I have a master’s degree in Mechatronics Engineering from
+                    Aalto University. I have worked with the Autonomous
+                    Mobility research group, where I contributed to multiple
+                    projects related to autonomous systems, mobile robotics,
+                    and control. My work has involved developing, testing,
+                    and validating robotic solutions for industrial and
+                    research environments.
+                </p>
+
+                <p class="section-description">
+                    I also bring mechanical engineering experience from
+                    industry, particularly in the maintenance and planning of
+                    mechanical equipment and machinery. This background helps
+                    me approach robotics problems with both practical
+                    engineering understanding and hands-on implementation
+                    experience.
+                </p>
 
             </div>
 
@@ -95,19 +136,9 @@
 
             <div class="container">
 
-                <p class="section-label">
-                    SELECTED ROBOTICS WORK
-                </p>
-
                 <h2>Projects</h2>
 
-                <p class="section-description projects-intro">
-                    Projects involving autonomous mobile robots, ROS 2,
-                    machine vision, digital twins, path planning,
-                    navigation, control, and simulation.
-                </p>
-
-                <!-- Project 1: Master's thesis -->
+                <!-- Project 1 -->
                 <article class="featured-project">
 
                     <div class="featured-video-stack">
@@ -126,7 +157,6 @@
                                     src="videos/trolley-docking.mp4"
                                     type="video/mp4"
                                 >
-
                                 Your browser does not support HTML video.
                             </video>
 
@@ -146,7 +176,6 @@
                                     src="videos/trolley-transport.mp4"
                                     type="video/mp4"
                                 >
-
                                 Your browser does not support HTML video.
                             </video>
 
@@ -166,7 +195,6 @@
                                     src="videos/trolley-new.mp4"
                                     type="video/mp4"
                                 >
-
                                 Your browser does not support HTML video.
                             </video>
 
@@ -233,7 +261,7 @@
                         <div class="project-links project-action-buttons">
 
                             <a
-                                href="documents/Thesis_Muhammad_Anis.pdf"
+                                href="documents/Thesis_Muhmmad_Anis.pdf"
                                 class="project-action-button document-button"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -259,7 +287,7 @@
                 <!-- Supporting projects -->
                 <div class="project-grid">
 
-                    <!-- Project 2: ABB Flexley Tug T702 Digital Twin -->
+                    <!-- Project 2 -->
                     <article class="project-card">
 
                         <div class="project-media card-media simbot-media">
@@ -287,7 +315,7 @@
                                 This project involved creating a
                                 simulation-ready digital twin of the ABB
                                 Flexley Tug T702 mobile platform. The digital
-                                twin replicated the robot's exact dimensions,
+                                twin replicated the robot’s exact dimensions,
                                 motion behaviour, physics, sensors, and other
                                 important physical properties.
                             </p>
@@ -316,7 +344,7 @@
 
                     </article>
 
-                    <!-- Project 3: Curious Robot -->
+                    <!-- Project 3 -->
                     <article class="project-card">
 
                         <div
@@ -335,7 +363,6 @@
                                     src="videos/Hureka.mp4"
                                     type="video/mp4"
                                 >
-
                                 Your browser does not support HTML video.
                             </video>
 
@@ -385,51 +412,36 @@
 
                     </article>
 
-                    <!-- Project 4: Path-Finding Algorithms -->
+                    <!-- Project 4 -->
                     <article class="project-card pathfinding-project">
 
                         <div class="pathfinding-gallery">
 
                             <figure class="pathfinding-image">
-
                                 <img
                                     src="images/Astar.png"
                                     alt="A-star path-finding algorithm result in the CERN facility"
                                     loading="lazy"
                                 >
-
-                                <figcaption>
-                                    A* Algorithm
-                                </figcaption>
-
+                                <figcaption>A* Algorithm</figcaption>
                             </figure>
 
                             <figure class="pathfinding-image">
-
                                 <img
                                     src="images/dIJKSTRA.png"
                                     alt="Dijkstra path-finding algorithm result in the CERN facility"
                                     loading="lazy"
                                 >
-
-                                <figcaption>
-                                    Dijkstra Algorithm
-                                </figcaption>
-
+                                <figcaption>Dijkstra Algorithm</figcaption>
                             </figure>
 
                             <figure class="pathfinding-image">
-
                                 <img
                                     src="images/RRT.png"
                                     alt="RRT path-finding algorithm result in the CERN facility"
                                     loading="lazy"
                                 >
-
-                                <figcaption>
-                                    RRT Algorithm
-                                </figcaption>
-
+                                <figcaption>RRT Algorithm</figcaption>
                             </figure>
 
                         </div>
@@ -500,48 +512,16 @@
 
         </section>
 
-        <!-- About -->
-        <section id="about" class="section">
-
-            <div class="container narrow-content">
-
-                <p class="section-label">
-                    ABOUT
-                </p>
-
-                <h2>
-                    Engineering experience from industry to autonomous robotics
-                </h2>
-
-                <p class="section-description">
-                    I have completed my master's degree in Mechatronics at
-                    Aalto University and worked with the Autonomous Mobility
-                    Lab. My work focuses on autonomous mobile robots, target
-                    localization, industrial navigation, perception, and
-                    precise robot docking.
-                </p>
-
-                <p class="section-description">
-                    I also bring professional experience in industrial
-                    maintenance and planning, allowing me to approach robotics
-                    projects from both a practical engineering and software
-                    development perspective.
-                </p>
-
-            </div>
-
-        </section>
-
         <!-- Skills -->
         <section
             id="skills"
-            class="section alternate-background"
+            class="section"
         >
 
             <div class="container">
 
                 <p class="section-label">
-                    TECHNICAL EXPERTISE
+                    SKILLS
                 </p>
 
                 <h2>Skills and technologies</h2>
@@ -549,45 +529,31 @@
                 <div class="skills-grid">
 
                     <div class="skill-group">
-
                         <h3>Robotics</h3>
-
                         <p>
-                            ROS 2, Nav2, Gazebo, MoveIt, RViz, SLAM, and AMCL
+                            ROS 2, Nav2, Gazebo, RViz, and SLAM
                         </p>
-
                     </div>
 
                     <div class="skill-group">
-
                         <h3>Programming</h3>
-
                         <p>
                             Python, C++, MATLAB, Simulink, Git, and Linux
                         </p>
-
                     </div>
 
                     <div class="skill-group">
-
                         <h3>Perception and Control</h3>
-
                         <p>
-                            LiDAR, UWB, machine vision, clustering,
-                            sensor fusion, LQR, and path tracking
+                            LiDAR, UWB, LQR, and path tracking
                         </p>
-
                     </div>
 
                     <div class="skill-group">
-
                         <h3>Mechanical Engineering</h3>
-
                         <p>
-                            SolidWorks, Siemens NX, PTC Creo, ANSYS,
-                            and Abaqus
+                            SolidWorks, Siemens NX, PTC Creo, and ANSYS
                         </p>
-
                     </div>
 
                 </div>
@@ -608,20 +574,14 @@
                     CONTACT
                 </p>
 
-                <h2>
-                    Let's build autonomous systems
-                </h2>
-
-                <p>
-                    I am interested in opportunities involving robotics,
-                    autonomous systems, industrial automation, perception,
-                    navigation, and control.
-                </p>
-
                 <div class="contact-links">
 
                     <a href="mailto:muhammadanis831@gmail.com">
-                        Email
+                        muhammadanis831@gmail.com
+                    </a>
+
+                    <a href="tel:+358417405607">
+                        +358 41 740 5607
                     </a>
 
                     <a
@@ -648,13 +608,10 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
-
         <div class="container">
             <p>© 2026 Muhammad Anis</p>
         </div>
-
     </footer>
 
 </body>
