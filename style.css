@@ -47,6 +47,7 @@ a {
     padding-right: 24px;
 }
 
+
 /* Navigation */
 
 header {
@@ -90,6 +91,7 @@ nav {
     color: var(--primary);
 }
 
+
 /* Hero */
 
 .compact-hero {
@@ -97,9 +99,7 @@ nav {
 }
 
 .compact-hero-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    display: block;
 }
 
 .hero-text-block {
@@ -109,16 +109,18 @@ nav {
 .hero-identity {
     align-items: center;
     display: flex;
-    gap: 24px;
-    margin-bottom: 24px;
+    gap: 26px;
+    margin-bottom: 26px;
 }
 
 .hero-profile-image {
     border: 1px solid var(--border);
     border-radius: 50%;
-    height: 110px;
+    flex-shrink: 0;
+    height: 120px;
     object-fit: cover;
-    width: 110px;
+    object-position: center;
+    width: 120px;
 }
 
 .compact-hero h1 {
@@ -131,7 +133,10 @@ nav {
 .hero-summary {
     color: var(--secondary-text);
     font-size: 1.08rem;
-    max-width: 850px;
+    line-height: 1.75;
+    max-width: 900px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .hero-buttons {
@@ -180,6 +185,7 @@ nav {
     color: white;
 }
 
+
 /* General sections */
 
 .section {
@@ -210,14 +216,11 @@ nav {
     color: var(--secondary-text);
     font-size: 1.08rem;
     margin-bottom: 18px;
-    max-width: 860px;
+    max-width: 900px;
     text-align: justify;
     text-justify: inter-word;
 }
 
-.narrow-content {
-    max-width: 900px;
-}
 
 /* Featured project */
 
@@ -234,8 +237,6 @@ nav {
     margin-bottom: 30px;
     overflow: hidden;
 }
-
-/* Featured project video stack */
 
 .featured-video-stack {
     background: #0d1422;
@@ -272,6 +273,7 @@ nav {
     width: 100%;
 }
 
+
 /* Featured project content */
 
 .featured-project-content {
@@ -294,6 +296,7 @@ nav {
     text-align: justify;
     text-justify: inter-word;
 }
+
 
 /* Project results */
 
@@ -327,6 +330,7 @@ nav {
     line-height: 1.35;
 }
 
+
 /* Project links */
 
 .project-links {
@@ -348,6 +352,7 @@ nav {
 .project-content a:focus-visible {
     text-decoration: underline;
 }
+
 
 /* Matching project action buttons */
 
@@ -405,6 +410,7 @@ nav {
     color: white;
 }
 
+
 /* Supporting projects */
 
 .project-grid {
@@ -455,6 +461,7 @@ nav {
     object-fit: contain;
 }
 
+
 /* Fourth project */
 
 .pathfinding-project {
@@ -499,6 +506,7 @@ nav {
     text-align: center;
 }
 
+
 /* Supporting project content */
 
 .project-content {
@@ -526,6 +534,7 @@ nav {
     padding-top: 16px;
 }
 
+
 /* Skills */
 
 .skills-grid {
@@ -546,6 +555,7 @@ nav {
 .skill-group p {
     color: var(--secondary-text);
 }
+
 
 /* Contact */
 
@@ -576,6 +586,7 @@ nav {
     text-decoration: underline;
 }
 
+
 /* Footer */
 
 footer {
@@ -585,20 +596,10 @@ footer {
     text-align: center;
 }
 
+
 /* Tablet layout */
 
 @media (max-width: 900px) {
-    .compact-hero-content {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 28px;
-    }
-
-    .hero-identity {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 16px;
-    }
 
     .featured-project {
         grid-template-columns: 1fr;
@@ -642,9 +643,11 @@ footer {
     }
 }
 
+
 /* Mobile layout */
 
 @media (max-width: 600px) {
+
     .container {
         padding-left: 18px;
         padding-right: 18px;
@@ -658,13 +661,18 @@ footer {
         padding: 52px 0 42px;
     }
 
+    .hero-identity {
+        align-items: center;
+        gap: 16px;
+    }
+
     .hero-profile-image {
-        height: 90px;
-        width: 90px;
+        height: 85px;
+        width: 85px;
     }
 
     .compact-hero h1 {
-        font-size: clamp(1.9rem, 11vw, 2.7rem);
+        font-size: clamp(1.9rem, 10vw, 2.7rem);
     }
 
     .hero-buttons,
@@ -713,6 +721,7 @@ footer {
         padding: 24px;
     }
 
+    .hero-summary,
     .featured-project-content > p:not(.project-category),
     .project-content > p:not(.project-category),
     .section-description {
@@ -720,9 +729,24 @@ footer {
     }
 }
 
+
 /* Very small mobile screens */
 
 @media (max-width: 420px) {
+
+    .hero-identity {
+        gap: 12px;
+    }
+
+    .hero-profile-image {
+        height: 72px;
+        width: 72px;
+    }
+
+    .compact-hero h1 {
+        font-size: 1.8rem;
+    }
+
     .pathfinding-gallery {
         gap: 3px;
         padding: 4px;
@@ -739,9 +763,11 @@ footer {
     }
 }
 
+
 /* Reduced-motion preferences */
 
 @media (prefers-reduced-motion: reduce) {
+
     html {
         scroll-behavior: auto;
     }
