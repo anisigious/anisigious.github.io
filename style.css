@@ -47,6 +47,7 @@ a {
     padding-right: 24px;
 }
 
+
 /* Navigation */
 
 header {
@@ -88,6 +89,7 @@ nav {
 .nav-links a:focus-visible {
     color: var(--primary);
 }
+
 
 /* Introduction */
 
@@ -171,6 +173,7 @@ nav {
     color: white;
 }
 
+
 /* General sections */
 
 .section {
@@ -205,6 +208,7 @@ nav {
     max-width: 900px;
 }
 
+
 /* Featured project */
 
 .featured-project {
@@ -221,7 +225,8 @@ nav {
     overflow: hidden;
 }
 
-/* Three vertically stacked videos */
+
+/* Featured project video stack */
 
 .featured-video-stack {
     background: #0d1422;
@@ -258,6 +263,7 @@ nav {
     width: 100%;
 }
 
+
 /* Featured project content */
 
 .featured-project-content {
@@ -280,6 +286,7 @@ nav {
     text-align: justify;
     text-justify: inter-word;
 }
+
 
 /* Project results */
 
@@ -313,6 +320,7 @@ nav {
     line-height: 1.35;
 }
 
+
 /* Project links */
 
 .project-links {
@@ -334,6 +342,7 @@ nav {
 .project-content a:focus-visible {
     text-decoration: underline;
 }
+
 
 /* Supporting projects */
 
@@ -367,8 +376,6 @@ nav {
     aspect-ratio: 16 / 10;
 }
 
-/* Default media behaviour */
-
 .card-media img,
 .card-media video {
     height: 100%;
@@ -377,27 +384,31 @@ nav {
     width: 100%;
 }
 
-/* Show complete SimBot GIF */
+
+/* Show the complete SimBot GIF */
 
 .simbot-media img {
     background: #0d1422;
     object-fit: contain;
 }
 
-/* Show complete Curious Robot video */
+
+/* Show the complete Curious Robot video */
 
 .curious-robot-media video {
     background: #0d1422;
     object-fit: contain;
 }
 
-/* Fourth project spans the full project-grid width */
+
+/* Fourth project */
 
 .pathfinding-project {
     grid-column: 1 / -1;
 }
 
-/* Fourth project image gallery */
+
+/* Fourth-project image gallery */
 
 .pathfinding-gallery {
     background: #0d1422;
@@ -406,8 +417,6 @@ nav {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     padding: 16px;
 }
-
-/* Individual path-finding image container */
 
 .pathfinding-image {
     background: #ffffff;
@@ -419,30 +428,34 @@ nav {
     overflow: hidden;
 }
 
+
 /*
-The images have a limited height and use contain,
-so the complete result remains visible without zooming.
+The images are limited to 170px in height.
+
+object-fit: contain and padding make them appear zoomed out
+while keeping all three images parallel.
 */
 
 .pathfinding-image img {
     background: #ffffff;
-    height: 210px;
+    display: block;
+    height: 170px;
     object-fit: contain;
     object-position: center;
-    padding: 14px;
+    padding: 18px;
     width: 100%;
 }
-
-/* Algorithm labels */
 
 .pathfinding-image figcaption {
     background: #0d1422;
     color: white;
-    font-size: 0.86rem;
+    font-size: 0.82rem;
     font-weight: 700;
-    padding: 9px 12px;
+    line-height: 1.3;
+    padding: 8px 10px;
     text-align: center;
 }
+
 
 /* Supporting project content */
 
@@ -471,6 +484,7 @@ so the complete result remains visible without zooming.
     padding-top: 16px;
 }
 
+
 /* Skills */
 
 .skills-grid {
@@ -491,6 +505,7 @@ so the complete result remains visible without zooming.
 .skill-group p {
     color: var(--secondary-text);
 }
+
 
 /* Contact */
 
@@ -520,6 +535,7 @@ so the complete result remains visible without zooming.
     font-weight: 700;
 }
 
+
 /* Footer */
 
 footer {
@@ -529,9 +545,11 @@ footer {
     text-align: center;
 }
 
+
 /* Tablet layout */
 
 @media (max-width: 900px) {
+
     .compact-hero-content {
         align-items: flex-start;
         flex-direction: column;
@@ -565,13 +583,13 @@ footer {
     }
 
     .pathfinding-gallery {
-        gap: 10px;
+        gap: 8px;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        padding: 12px;
+        padding: 10px;
     }
 
     .pathfinding-image img {
-        height: 170px;
+        height: 140px;
         padding: 10px;
     }
 
@@ -580,9 +598,11 @@ footer {
     }
 }
 
+
 /* Mobile layout */
 
 @media (max-width: 600px) {
+
     .container {
         padding-left: 18px;
         padding-right: 18px;
@@ -620,14 +640,14 @@ footer {
     }
 
     /*
-    Keep the three algorithm images parallel on mobile,
-    but reduce their height and spacing.
+    The three path-planning images remain parallel
+    on mobile but are made smaller.
     */
 
     .pathfinding-gallery {
-        gap: 6px;
+        gap: 5px;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        padding: 8px;
+        padding: 6px;
     }
 
     .pathfinding-image {
@@ -635,22 +655,19 @@ footer {
     }
 
     .pathfinding-image img {
-        height: 110px;
-        padding: 5px;
+        height: 95px;
+        padding: 4px;
     }
 
     .pathfinding-image figcaption {
-        font-size: 0.65rem;
-        line-height: 1.2;
-        padding: 7px 3px;
+        font-size: 0.62rem;
+        padding: 5px 2px;
     }
 
     .featured-project-content,
     .project-content {
         padding: 24px;
     }
-
-    /* Avoid large gaps between words on narrow screens */
 
     .featured-project-content > p:not(.project-category),
     .project-content > p:not(.project-category),
@@ -659,28 +676,32 @@ footer {
     }
 }
 
+
 /* Very small mobile screens */
 
 @media (max-width: 420px) {
+
     .pathfinding-gallery {
-        gap: 4px;
-        padding: 6px;
+        gap: 3px;
+        padding: 4px;
     }
 
     .pathfinding-image img {
-        height: 90px;
+        height: 82px;
         padding: 3px;
     }
 
     .pathfinding-image figcaption {
-        font-size: 0.58rem;
-        padding: 6px 2px;
+        font-size: 0.55rem;
+        padding: 4px 1px;
     }
 }
+
 
 /* Reduced-motion preferences */
 
 @media (prefers-reduced-motion: reduce) {
+
     html {
         scroll-behavior: auto;
     }
