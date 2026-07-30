@@ -11,13 +11,13 @@
 
     <meta
         name="description"
-        content="Portfolio of Muhammad Anis, a robotics and mechatronics engineer working on ROS 2, autonomous mobile robots, machine vision, navigation, and control."
+        content="Portfolio of Muhammad Anis, a robotics and mechatronics engineer working on ROS 2, autonomous mobile robots, machine vision, path planning, navigation, and control."
     >
 
     <title>Muhammad Anis | Robotics Engineer</title>
 
-    <!-- Change the version number after CSS updates to prevent caching -->
-    <link rel="stylesheet" href="style.css?v=12">
+    <!-- Increase the version number after CSS changes to avoid cached styling -->
+    <link rel="stylesheet" href="style.css?v=14">
 </head>
 
 <body>
@@ -104,17 +104,16 @@
 
                 <p class="section-description projects-intro">
                     Projects involving autonomous mobile robots, ROS 2,
-                    machine vision, digital twins, navigation, control,
-                    and simulation.
+                    machine vision, digital twins, path planning,
+                    navigation, control, and simulation.
                 </p>
 
-                <!-- Featured thesis project -->
+                <!-- Project 1: Featured thesis project -->
                 <article class="featured-project">
 
                     <!-- Three videos stacked vertically -->
                     <div class="featured-video-stack">
 
-                        <!-- Video 1 -->
                         <div class="featured-video-frame">
 
                             <video
@@ -135,7 +134,6 @@
 
                         </div>
 
-                        <!-- Video 2 -->
                         <div class="featured-video-frame">
 
                             <video
@@ -156,7 +154,6 @@
 
                         </div>
 
-                        <!-- Video 3 -->
                         <div class="featured-video-frame">
 
                             <video
@@ -255,7 +252,7 @@
                 <!-- Supporting projects -->
                 <div class="project-grid">
 
-                    <!-- ABB Flexley Tug T702 Digital Twin -->
+                    <!-- Project 2: ABB Flexley Tug T702 Digital Twin -->
                     <article class="project-card">
 
                         <div class="project-media card-media simbot-media">
@@ -283,7 +280,7 @@
                                 This project involved creating a
                                 simulation-ready digital twin of the ABB
                                 Flexley Tug T702 mobile platform. The digital
-                                twin replicated the robot’s exact dimensions,
+                                twin replicated the robot's exact dimensions,
                                 motion behaviour, physics, sensors, and other
                                 important physical properties.
                             </p>
@@ -312,10 +309,9 @@
 
                     </article>
 
-                    <!-- Curious Robot Project -->
+                    <!-- Project 3: Curious Robot -->
                     <article class="project-card">
 
-                        <!-- This class prevents the video from being cropped -->
                         <div
                             class="project-media card-media curious-robot-media"
                         >
@@ -358,7 +354,7 @@
 
                             <p>
                                 The project consisted of two major parts.
-                                The first was the machine-vision system used
+                                The first was a machine-vision system used
                                 to detect and recognize human gestures. The
                                 second involved sending specific instructions
                                 to the robot based on the recognized gesture,
@@ -372,6 +368,101 @@
 
                             <a
                                 href="https://github.com/han-le11/robot-machine-vision.git"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View repository →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 4: Path-Finding Algorithms -->
+                    <article class="project-card pathfinding-project">
+
+                        <div class="pathfinding-gallery">
+
+                            <figure class="pathfinding-image">
+
+                                <img
+                                    src="images/Astar.png"
+                                    alt="A-star path-finding algorithm result in the CERN facility"
+                                    loading="lazy"
+                                >
+
+                                <figcaption>
+                                    A* Algorithm
+                                </figcaption>
+
+                            </figure>
+
+                            <figure class="pathfinding-image">
+
+                                <img
+                                    src="images/dIJKSTRA.png"
+                                    alt="Dijkstra path-finding algorithm result in the CERN facility"
+                                    loading="lazy"
+                                >
+
+                                <figcaption>
+                                    Dijkstra Algorithm
+                                </figcaption>
+
+                            </figure>
+
+                            <figure class="pathfinding-image">
+
+                                <img
+                                    src="images/RRT.png"
+                                    alt="RRT path-finding algorithm result in the CERN facility"
+                                    loading="lazy"
+                                >
+
+                                <figcaption>
+                                    RRT Algorithm
+                                </figcaption>
+
+                            </figure>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <p class="project-category">
+                                PATH PLANNING · MOBILE ROBOTS · ALGORITHMS
+                            </p>
+
+                            <h3>
+                                Comparison of Path-Finding Algorithms for
+                                Autonomous Navigation of Mobile Robots
+                            </h3>
+
+                            <p>
+                                This project focused on comparing the
+                                performance of the A*, Dijkstra, and
+                                Rapidly-exploring Random Tree (RRT)
+                                path-finding algorithms for autonomous
+                                mobile-robot navigation in a simulated CERN
+                                facility.
+                            </p>
+
+                            <p>
+                                The objective was to compute the most
+                                optimized path and evaluate the performance
+                                of each algorithm. The comparison considered
+                                the generated routes, path quality,
+                                computational behaviour, and suitability of
+                                each method for autonomous navigation.
+                            </p>
+
+                            <p class="project-tech">
+                                Python · A* · Dijkstra · RRT · Path Planning ·
+                                Autonomous Navigation
+                            </p>
+
+                            <a
+                                href="https://github.com/anisigious/Mira-Robot.git"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -402,7 +493,7 @@
                 </h2>
 
                 <p class="section-description">
-                    I have completed my master’s degree in Mechatronics at
+                    I have completed my master's degree in Mechatronics at
                     Aalto University and worked with the Autonomous Mobility
                     Lab. My work focuses on autonomous mobile robots, target
                     localization, industrial navigation, perception, and
@@ -497,7 +588,7 @@
                 </p>
 
                 <h2>
-                    Let’s build autonomous systems
+                    Let's build autonomous systems
                 </h2>
 
                 <p>
